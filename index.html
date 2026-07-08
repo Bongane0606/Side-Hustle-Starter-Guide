@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 <style>
   .hero{ padding:70px 0 60px; position:relative; overflow:hidden; }
-  .hero .wrap{ display:grid; grid-template-columns:1.3fr 1fr; gap:40px; align-items:end; }
+  .hero .wrap{ display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr); gap:40px; align-items:end; }
   @media (max-width:860px){ .hero .wrap{ grid-template-columns:1fr; } }
   .hero-receipt{
     background:var(--ink); color:var(--paper);
@@ -23,6 +23,8 @@
   }
   .hero-receipt h4{ font-family:var(--mono); text-transform:uppercase; letter-spacing:0.1em; font-size:0.78rem; color:var(--gold); margin-bottom:14px; }
   .hero-receipt .line{ display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dashed rgba(241,236,216,0.25); }
+  .hero-receipt .line span:first-child{ padding-right:14px; }
+  .hero-receipt .line span:last-child{ white-space:nowrap; }
   .hero-receipt .total{ font-weight:600; color:var(--gold); border-bottom:none; padding-top:12px; }
 
   .band{ padding:80px 0; }
@@ -56,6 +58,13 @@
   .story-card{ display:flex; flex-direction:column; gap:14px; }
   .story-card .meta{ font-family:var(--mono); color:var(--rust); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; }
   .story-card strong{ color:var(--jade); }
+  @media (max-width:620px){
+    .hero{ padding:46px 0 42px; }
+    .hero-receipt{ transform:none; box-shadow:5px 5px 0 var(--gold); font-size:0.78rem; }
+    .band{ padding:54px 0; }
+    .steps li{ grid-template-columns:42px 1fr; gap:14px; }
+    .cta-band{ padding:54px 0; }
+  }
 </style>
 </head>
 <body>

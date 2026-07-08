@@ -18,7 +18,7 @@
   .jump a:hover{ background:var(--ink); color:var(--paper); }
 
   .hustle{ padding:60px 0; border-top:2px solid var(--ink); scroll-margin-top:90px; }
-  .hustle-head{ display:grid; grid-template-columns:1fr auto; gap:20px; align-items:start; margin-bottom:10px; }
+  .hustle-head{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:20px; align-items:start; margin-bottom:10px; }
   .hustle-head .num{ font-family:var(--mono); color:var(--rust); font-size:0.9rem; }
 
   .cost-table{ width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.9rem; margin:20px 0; }
@@ -53,6 +53,18 @@
   .pitfall li{ margin-bottom:8px; }
 
   .to-ledger{ margin-top:26px; }
+  @media (max-width:620px){
+    .page-head{ padding:42px 0 14px; }
+    .jump a{ flex:1 1 calc(50% - 10px); text-align:center; padding:8px 10px; }
+    .hustle{ padding:44px 0; }
+    .hustle-head{ grid-template-columns:1fr; gap:12px; }
+    .hustle-head .price-tag{ width:max-content; max-width:100%; }
+    .cost-table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; font-size:0.78rem; }
+    .cost-table th,
+    .cost-table td{ min-width:112px; }
+    .checklist li{ grid-template-columns:30px 1fr; gap:10px; }
+    .checklist li::before{ width:30px; height:24px; }
+  }
 </style>
 </head>
 <body>
