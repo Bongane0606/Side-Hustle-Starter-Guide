@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Guide — Side Hustle Starter Guide</title>
+<meta name="description" content="Deep-dive guides for hair, catering, tutoring, and reselling hustles — costs, launch checklists, and common mistakes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-head{ padding:56px 0 20px; }
+  .jump{ display:flex; gap:10px; flex-wrap:wrap; margin-top:26px; }
+  .jump a{
+    font-family:var(--mono); font-size:0.82rem; text-decoration:none;
+    border:2px solid var(--ink); border-radius:999px; padding:8px 16px;
+  }
+  .jump a:hover{ background:var(--ink); color:var(--paper); }
+
+  .hustle{ padding:60px 0; border-top:2px solid var(--ink); scroll-margin-top:90px; }
+  .hustle-head{ display:grid; grid-template-columns:1fr auto; gap:20px; align-items:start; margin-bottom:10px; }
+  .hustle-head .num{ font-family:var(--mono); color:var(--rust); font-size:0.9rem; }
+
+  .cost-table{ width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.9rem; margin:20px 0; }
+  .cost-table th{ text-align:left; text-transform:uppercase; letter-spacing:0.06em; font-size:0.72rem; border-bottom:2px solid var(--ink); padding:8px 6px; }
+  .cost-table td{ padding:9px 6px; border-bottom:1px solid var(--line); }
+  .cost-table td:last-child, .cost-table th:last-child{ text-align:right; }
+  .cost-table tr.total td{ border-top:2px solid var(--ink); border-bottom:none; font-weight:600; color:var(--jade); padding-top:12px; }
+
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:34px; margin-top:30px; }
+  @media (max-width:800px){ .two-col{ grid-template-columns:1fr; } }
+
+  .checklist{ counter-reset:chk; list-style:none; padding:0; margin:0; }
+  .checklist li{
+    counter-increment:chk;
+    display:grid; grid-template-columns:34px 1fr; gap:12px;
+    padding:12px 0; border-bottom:1px solid var(--line);
+    font-size:0.94rem;
+  }
+  .checklist li::before{
+    content:counter(chk, decimal-leading-zero);
+    font-family:var(--mono); color:var(--gold); background:var(--ink);
+    width:34px; height:26px; display:flex; align-items:center; justify-content:center;
+    border-radius:var(--radius); font-size:0.78rem;
+  }
+
+  .pitfall{
+    background:var(--ink); color:var(--paper); border-radius:var(--radius);
+    padding:20px; font-size:0.92rem;
+  }
+  .pitfall h4{ font-family:var(--mono); color:var(--rust); text-transform:uppercase; font-size:0.78rem; letter-spacing:0.08em; margin-bottom:10px; }
+  .pitfall ul{ margin:0; padding-left:18px; }
+  .pitfall li{ margin-bottom:8px; }
+
+  .to-ledger{ margin-top:26px; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Mordecai<span>Tech</span>Solutions</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html" class="active">The Guide</a></li>
+      <li><a href="ledger.html">Business Plan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">The guide</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.6rem);">Four hustles,<br>done properly.</h1>
+    <p class="lede" style="margin-top:16px;">Real starting costs, a launch order that actually works, and the mistake that kills each one in month one. Jump to yours.</p>
+    <nav class="jump" aria-label="Jump to hustle">
+      <a href="#hair">01 Hair</a>
+      <a href="#catering">02 Catering</a>
+      <a href="#tutoring">03 Tutoring</a>
+      <a href="#reselling">04 Reselling</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HAIR ============ -->
+<section class="hustle" id="hair">
+  <div class="wrap">
+    <div class="hustle-head">
+      <div>
+        <span class="num">01 / Hair</span>
+        <h2>Braiding &amp; styling</h2>
+      </div>
+      <span class="price-tag">Start from R770</span>
+    </div>
+    <p class="lede">Your income is tied to your two hands and how many chairs you can fill in a week. Keep stock costs low until you have repeat clients.</p>
+
+    <table class="cost-table">
+      <thead><tr><th>Item</th><th>Once-off / Monthly</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Hair, extensions &amp; braiding thread (first batch)</td><td>Once-off</td><td>R450</td></tr>
+        <tr><td>WhatsApp Business profile + price list photos</td><td>Once-off</td><td>R0</td></tr>
+        <tr><td>Flyers, 100 copies</td><td>Once-off</td><td>R120</td></tr>
+        <tr><td>Chair rental at a friend's salon, 1 week</td><td>Monthly</td><td>R200</td></tr>
+        <tr class="total"><td colspan="2">Total to start</td><td>R770</td></tr>
+      </tbody>
+    </table>
+
+    <div class="two-col">
+      <div>
+        <h3>Launch checklist</h3>
+        <ol class="checklist">
+          <li>Photograph 6–8 styles you can actually do well, in good light.</li>
+          <li>Set 3 prices: quick style, medium, full install — write them down.</li>
+          <li>Post the price list in a local WhatsApp/Facebook group.</li>
+          <li>Book your first 3 clients at a discount in exchange for photos.</li>
+          <li>Buy stock per booking, not in bulk, until demand is steady.</li>
+        </ol>
+      </div>
+      <div class="pitfall">
+        <h4>The one that kills it</h4>
+        <ul>
+          <li>Doing "friend prices" for everyone — you run out of stock money by week three.</li>
+          <li>No fixed prices, so every booking becomes a negotiation.</li>
+          <li>Not asking for a deposit on long installs, then the client no-shows.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="ledger.html" class="btn btn-solid to-ledger">Fill in the ledger for this hustle →</a>
+  </div>
+</section>
+
+<!-- ============ CATERING ============ -->
+<section class="hustle" id="catering">
+  <div class="wrap">
+    <div class="hustle-head">
+      <div>
+        <span class="num">02 / Catering</span>
+        <h2>Home catering</h2>
+      </div>
+      <span class="price-tag">Start from R950</span>
+    </div>
+    <p class="lede">Sell what you already cook well, by the plate or the tray. Weekend events pay more per hour than daily plate sales — but daily sales build your name.</p>
+
+    <table class="cost-table">
+      <thead><tr><th>Item</th><th>Once-off / Monthly</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Test batch ingredients (2 dishes)</td><td>Once-off</td><td>R250</td></tr>
+        <tr><td>Take-away containers, 50 pack</td><td>Monthly</td><td>R180</td></tr>
+        <tr><td>Gas / electricity top-up for cook days</td><td>Monthly</td><td>R220</td></tr>
+        <tr><td>Menu card + flyers</td><td>Once-off</td><td>R150</td></tr>
+        <tr><td>Delivery — own transport or taxi fare</td><td>Monthly</td><td>R150</td></tr>
+        <tr class="total"><td colspan="2">Total to start</td><td>R950</td></tr>
+      </tbody>
+    </table>
+
+    <div class="two-col">
+      <div>
+        <h3>Launch checklist</h3>
+        <ol class="checklist">
+          <li>Pick 2–3 dishes you can cook consistently, not your whole repertoire.</li>
+          <li>Cook a test batch, price it per portion including your time.</li>
+          <li>Get 5 honest tasters — neighbours, church, work — before selling.</li>
+          <li>Open orders for one day a week only, to control your stock buying.</li>
+          <li>Take a deposit for orders over 10 plates.</li>
+        </ol>
+      </div>
+      <div class="pitfall">
+        <h4>The one that kills it</h4>
+        <ul>
+          <li>Pricing the plate on ingredients only — forgetting gas, containers, and your own time.</li>
+          <li>Taking every order regardless of size, then running out of ingredients mid-week.</li>
+          <li>No deposit on large event orders, so a cancellation costs you the stock.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="ledger.html" class="btn btn-solid to-ledger">Fill in the ledger for this hustle →</a>
+  </div>
+</section>
+
+<!-- ============ TUTORING ============ -->
+<section class="hustle" id="tutoring">
+  <div class="wrap">
+    <div class="hustle-head">
+      <div>
+        <span class="num">03 / Tutoring</span>
+        <h2>Tutoring &amp; lessons</h2>
+      </div>
+      <span class="price-tag">Start from R150</span>
+    </div>
+    <p class="lede">No stock, no delivery — you're selling knowledge you already have. The trade-off is your income is capped by your hours, unless you teach groups.</p>
+
+    <table class="cost-table">
+      <thead><tr><th>Item</th><th>Once-off / Monthly</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Printed worksheets / past papers</td><td>Once-off</td><td>R80</td></tr>
+        <tr><td>Data for online sessions</td><td>Monthly</td><td>R70</td></tr>
+        <tr><td>Flyers at local schools / community board</td><td>Once-off</td><td>R0 (free permission)</td></tr>
+        <tr class="total"><td colspan="2">Total to start</td><td>R150</td></tr>
+      </tbody>
+    </table>
+
+    <div class="two-col">
+      <div>
+        <h3>Launch checklist</h3>
+        <ol class="checklist">
+          <li>Pick 1–2 subjects and a grade range you're confident in.</li>
+          <li>Set a per-lesson price and a cheaper per-term package price.</li>
+          <li>Offer one free 20-minute assessment lesson to close new parents.</li>
+          <li>Ask satisfied parents for a written reference you can share.</li>
+          <li>Fill gaps in your week with a small group rate, not more solo hours.</li>
+        </ol>
+      </div>
+      <div class="pitfall">
+        <h4>The one that kills it</h4>
+        <ul>
+          <li>Charging per lesson only, so income disappears every school holiday.</li>
+          <li>No cancellation policy — students skip and you lose paid hours.</li>
+          <li>Turning every student into a one-on-one instead of grouping similar levels.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="ledger.html" class="btn btn-solid to-ledger">Fill in the ledger for this hustle →</a>
+  </div>
+</section>
+
+<!-- ============ RESELLING ============ -->
+<section class="hustle" id="reselling">
+  <div class="wrap">
+    <div class="hustle-head">
+      <div>
+        <span class="num">04 / Reselling</span>
+        <h2>Reselling &amp; thrifting</h2>
+      </div>
+      <span class="price-tag">Start from R500</span>
+    </div>
+    <p class="lede">Clothes, sneakers, airtime, data — the whole game is cash flow. Turning your stock over fast beats holding out for a bigger markup.</p>
+
+    <table class="cost-table">
+      <thead><tr><th>Item</th><th>Once-off / Monthly</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>First bale or stock buy</td><td>Once-off</td><td>R350</td></tr>
+        <tr><td>Photo backdrop / good lighting spot</td><td>Once-off</td><td>R0</td></tr>
+        <tr><td>Data for posting daily</td><td>Monthly</td><td>R70</td></tr>
+        <tr><td>Packaging for deliveries</td><td>Monthly</td><td>R80</td></tr>
+        <tr class="total"><td colspan="2">Total to start</td><td>R500</td></tr>
+      </tbody>
+    </table>
+
+    <div class="two-col">
+      <div>
+        <h3>Launch checklist</h3>
+        <ol class="checklist">
+          <li>Buy a small, focused stock batch — one category, not a bit of everything.</li>
+          <li>Photograph every item the same way, same background, same light.</li>
+          <li>Price to move: mark up 40–60%, not double, until you have buyers.</li>
+          <li>Post daily in the same 2–3 groups so people expect to see you.</li>
+          <li>Reinvest the first sales into stock before spending the profit.</li>
+        </ol>
+      </div>
+      <div class="pitfall">
+        <h4>The one that kills it</h4>
+        <ul>
+          <li>Buying variety instead of depth — one of everything sells slowly.</li>
+          <li>Spending profit before restocking, so momentum dies after batch one.</li>
+          <li>No record of what you paid per item — you can't tell if you're actually profiting.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="ledger.html" class="btn btn-solid to-ledger">Fill in the ledger for this hustle →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
+    <p><a href="ledger.html" style="text-decoration:underline;">Go to the business plan ledger →</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

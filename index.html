@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Side Hustle Starter Guide — MordecaiTechSolutions</title>
+<meta name="description" content="A practical, no-fluff guide to starting a hair, catering, tutoring, or reselling hustle — plus a business plan ledger you can fill in and keep.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hero{ padding:70px 0 60px; position:relative; overflow:hidden; }
+  .hero .wrap{ display:grid; grid-template-columns:1.3fr 1fr; gap:40px; align-items:end; }
+  @media (max-width:860px){ .hero .wrap{ grid-template-columns:1fr; } }
+  .hero-receipt{
+    background:var(--ink); color:var(--paper);
+    border-radius:var(--radius);
+    padding:22px 22px 30px;
+    font-family:var(--mono);
+    font-size:0.86rem;
+    transform:rotate(2deg);
+    box-shadow:8px 8px 0 var(--gold);
+  }
+  .hero-receipt h4{ font-family:var(--mono); text-transform:uppercase; letter-spacing:0.1em; font-size:0.78rem; color:var(--gold); margin-bottom:14px; }
+  .hero-receipt .line{ display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dashed rgba(241,236,216,0.25); }
+  .hero-receipt .total{ font-weight:600; color:var(--gold); border-bottom:none; padding-top:12px; }
+
+  .band{ padding:80px 0; }
+  .band-alt{ background:var(--ink); color:var(--paper); }
+  .band-alt .eyebrow{ color:var(--gold); }
+  .band-alt .eyebrow::before{ background:var(--gold); }
+
+  .hustle-card{ display:flex; flex-direction:column; gap:14px; min-height:100%; }
+  .hustle-card .num{ font-family:var(--mono); color:var(--rust); font-size:0.85rem; }
+  .hustle-card ul{ margin:0; padding-left:18px; font-size:0.92rem; }
+  .hustle-card .tag-row{ margin-top:auto; display:flex; gap:8px; flex-wrap:wrap; padding-top:8px; }
+
+  .steps{ counter-reset:step; list-style:none; padding:0; margin:0; display:grid; gap:0; }
+  .steps li{
+    counter-increment:step;
+    display:grid; grid-template-columns:64px 1fr; gap:20px;
+    padding:24px 0; border-top:1px solid var(--line);
+  }
+  .steps li:last-child{ border-bottom:1px solid var(--line); }
+  .steps li::before{
+    content: counter(step, decimal-leading-zero);
+    font-family:var(--mono); font-size:1rem; color:var(--rust); padding-top:2px;
+  }
+
+  .cta-band{ background:var(--jade); color:var(--paper); padding:70px 0; text-align:center; }
+  .cta-band h2{ margin-bottom:16px; }
+  .cta-band .btn-row{ display:flex; gap:14px; justify-content:center; margin-top:26px; flex-wrap:wrap; }
+  .cta-band .btn{ border-color:var(--paper); color:var(--paper); }
+  .cta-band .btn-solid{ background:var(--paper); color:var(--ink); }
+  .cta-band .btn-solid:hover{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+  .story-card{ display:flex; flex-direction:column; gap:14px; }
+  .story-card .meta{ font-family:var(--mono); color:var(--rust); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; }
+  .story-card strong{ color:var(--jade); }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Mordecai<span>Tech</span>Solutions</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="guide.html">The Guide</a></li>
+      <li><a href="ledger.html">Business Plan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Start something this month</span>
+      <h1>Your hustle,<br>on paper,<br>before it's in the street.</h1>
+      <p class="lede" style="margin-top:20px;">A straight-talking guide to starting a hair, catering, tutoring, or reselling business — plus a business plan ledger you fill in once and keep for the bank, a stokvel, or yourself.</p>
+      <div class="btn-row" style="display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;">
+        <a href="guide.html" class="btn btn-solid">Read the guide</a>
+        <a href="ledger.html" class="btn">Open the ledger →</a>
+      </div>
+    </div>
+    <div class="hero-receipt torn-edge">
+      <h4>Startup Till Slip · Braiding Hustle</h4>
+      <div class="line"><span>Hair &amp; extensions stock</span><span>R450</span></div>
+      <div class="line"><span>WhatsApp Business setup</span><span>R0</span></div>
+      <div class="line"><span>Flyers, 100 copies</span><span>R120</span></div>
+      <div class="line"><span>Chair rental, 1 week</span><span>R200</span></div>
+      <div class="line total"><span>Total to start</span><span>R770</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Pick your lane</span>
+    <h2>Four hustles. One method.</h2>
+    <p class="lede" style="margin-top:14px; margin-bottom:36px;">Each one has different tools and a different first customer, but the same three questions decide if it survives: what do you sell, what does it cost you, and who pays first.</p>
+    <div class="grid grid-4">
+      <div class="card hustle-card">
+        <span class="num">01 / Hair</span>
+        <h3>Braiding &amp; styling</h3>
+        <p style="font-size:0.92rem;">Low stock cost, income tied to your hands and your hours.</p>
+        <ul><li>Home or rented chair</li><li>Reference photos as your menu</li><li>Repeat clients = real income</li></ul>
+        <div class="tag-row"><span class="price-tag">From R770</span></div>
+      </div>
+      <div class="card hustle-card">
+        <span class="num">02 / Catering</span>
+        <h3>Home catering</h3>
+        <p style="font-size:0.92rem;">Cook what you already cook well, sell it by the plate or the tray.</p>
+        <ul><li>Test batch before big orders</li><li>Container &amp; delivery costs</li><li>Weekend events pay best</li></ul>
+        <div class="tag-row"><span class="price-tag">From R950</span></div>
+      </div>
+      <div class="card hustle-card">
+        <span class="num">03 / Tutoring</span>
+        <h3>Tutoring &amp; lessons</h3>
+        <p style="font-size:0.92rem;">Sell knowledge you already have — maths, English, an instrument, a language.</p>
+        <ul><li>No stock costs at all</li><li>Parents pay per term, not per lesson</li><li>Group lessons scale your hour</li></ul>
+        <div class="tag-row"><span class="price-tag">From R150</span></div>
+      </div>
+      <div class="card hustle-card">
+        <span class="num">04 / Reselling</span>
+        <h3>Reselling &amp; thrifting</h3>
+        <p style="font-size:0.92rem;">Buy in bulk or bale, sell per item — clothes, sneakers, airtime, data.</p>
+        <ul><li>Cash flow is the whole game</li><li>Photos sell before quality does</li><li>Turnover beats markup</li></ul>
+        <div class="tag-row"><span class="price-tag">From R500</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-alt">
+  <div class="wrap">
+    <span class="eyebrow">How to use this site</span>
+    <h2>Three steps, in order.</h2>
+    <ol class="steps" style="margin-top:30px;">
+      <li>
+        <div>
+          <h3>Read the deep-dive for your hustle</h3>
+          <p style="margin-top:8px; opacity:0.85;">Every hustle in the guide has real starting costs, a launch checklist, and the mistakes people usually make in month one.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Fill in the ledger as you read</h3>
+          <p style="margin-top:8px; opacity:0.85;">The business plan template does the maths for you — startup costs, pricing, and break-even — as you type.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Print it or download it</h3>
+          <p style="margin-top:8px; opacity:0.85;">Take the finished page to a stokvel, a family meeting, or a bank — as a PDF or a Word document.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Proof from small starts</span>
+    <h2>Success stories</h2>
+    <p class="lede" style="margin-top:14px; margin-bottom:36px;">These examples show the pattern: start narrow, price properly, track the money, and reinvest before you expand.</p>
+    <div class="grid grid-4">
+      <div class="card story-card">
+        <span class="meta">Hair · Soweto</span>
+        <h3>Three bookings became weekends full</h3>
+        <p>She started with discounted photo clients, then moved to deposits for every long install.</p>
+        <p><strong>First month:</strong> R2,400 revenue</p>
+      </div>
+      <div class="card story-card">
+        <span class="meta">Catering · Durban</span>
+        <h3>One dish, one order day</h3>
+        <p>Instead of a huge menu, he sold plates every Friday and used pre-orders to buy ingredients.</p>
+        <p><strong>Break-even:</strong> 18 plates</p>
+      </div>
+      <div class="card story-card">
+        <span class="meta">Tutoring · Polokwane</span>
+        <h3>Parents paid per term</h3>
+        <p>She switched from single lessons to four-week packages and stopped losing income to cancellations.</p>
+        <p><strong>Best move:</strong> group lessons</p>
+      </div>
+      <div class="card story-card">
+        <span class="meta">Reselling · Cape Town</span>
+        <h3>Fast turnover beat big markup</h3>
+        <p>Small clothing batches, clear photos, and daily posts helped stock move before cash got stuck.</p>
+        <p><strong>Restock cycle:</strong> 10 days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="stamp" style="border-color:var(--paper); color:var(--paper);">Free · No login</span>
+    <h2 style="margin-top:18px;">Stop planning in your head.<br>Put it on the page.</h2>
+    <div class="btn-row">
+      <a href="ledger.html" class="btn btn-solid">Start my business plan</a>
+      <a href="guide.html" class="btn">Read the guide first</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
+    <p>Built for people starting something, not studying it.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
