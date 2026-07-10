@@ -141,7 +141,7 @@ p{ margin:0 0 1em; }
 .nav-toggle:hover{ background:var(--ink); color:var(--paper); }
 .nav-toggle{ display:none; }
 
-@media (max-width:720px){
+@media (max-width:980px){
   .site-nav .wrap{ padding-top:12px; padding-bottom:12px; }
   .brand{ font-size:0.95rem; overflow:hidden; text-overflow:ellipsis; }
   .nav-actions{ margin-left:auto; gap:8px; }

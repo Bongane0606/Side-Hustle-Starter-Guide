@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reselling Business — Side Hustle Starter Guide</title>
+<meta name="description" content="A detailed beginner guide to starting a reselling or thrifting business with stock buying, photos, pricing, delivery, cash flow, and launch steps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-head{ padding:56px 0 28px; }
+  .band{ padding:58px 0; }
+  .band-dark{ background:var(--ink); color:var(--paper); }
+  .band-dark .eyebrow{ color:var(--gold); }
+  .band-dark .eyebrow::before{ background:var(--gold); }
+  .content-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start; }
+  .wide-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:26px; }
+  .detail-card{ border:2px solid var(--ink); padding:22px; border-radius:var(--radius); background:var(--paper); }
+  body.dark-mode .detail-card{ background:var(--paper-dim); }
+  .band-dark .detail-card{ background:transparent; border-color:rgba(241,236,216,0.48); color:var(--paper); }
+  .detail-card h3{ margin-bottom:10px; }
+  .detail-card ul{ margin:0; padding-left:18px; }
+  .detail-card li{ margin-bottom:8px; }
+  .info-table{ width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.86rem; margin-top:18px; }
+  .info-table th{ text-align:left; border-bottom:2px solid var(--ink); padding:8px 6px; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; }
+  .info-table td{ padding:10px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  .info-table td:last-child, .info-table th:last-child{ text-align:right; }
+  .band-dark .info-table th{ border-bottom-color:var(--paper); }
+  .band-dark .info-table td{ border-bottom-color:rgba(241,236,216,0.22); }
+  .phase-list{ counter-reset:phase; list-style:none; padding:0; margin:24px 0 0; }
+  .phase-list li{ counter-increment:phase; display:grid; grid-template-columns:58px 1fr; gap:18px; padding:20px 0; border-top:1px solid var(--line); }
+  .phase-list li::before{ content:counter(phase, decimal-leading-zero); font-family:var(--mono); color:var(--rust); }
+  .quote-box{ border:2px solid var(--ink); padding:22px; background:var(--paper-dim); font-family:var(--mono); }
+  body.dark-mode .quote-box{ background:var(--paper-dim); }
+  @media (max-width:900px){ .content-grid, .wide-grid{ grid-template-columns:1fr; } }
+  @media (max-width:620px){
+    .page-head{ padding:42px 0 18px; }
+    .band{ padding:44px 0; }
+    .phase-list li{ grid-template-columns:38px 1fr; gap:12px; }
+    .info-table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; font-size:0.78rem; }
+    .info-table th, .info-table td{ min-width:130px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Mordecai<span>Tech</span>Solutions</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="start.html">Start Here</a></li>
+      <li><a href="guide.html" class="active">Business Ideas</a></li>
+      <li><a href="money.html">Money Plan</a></li>
+      <li><a href="decor.html">Decor Setup</a></li>
+      <li><a href="ledger.html">Business Plan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Reselling business</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.9rem);">Stock, photos,<br>turnover, delivery,<br>and cash flow.</h1>
+    <p class="lede" style="margin-top:16px;">This guide shows how to start reselling without trapping all your money in slow stock. Buy focused, photograph clearly, price to move, and keep records.</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap content-grid">
+    <div>
+      <span class="eyebrow">What you sell</span>
+      <h2>Reselling is buying well and moving fast</h2>
+      <p>Customers pay because you found something useful, affordable, stylish, scarce, or convenient. Your job is to choose the right stock, present it clearly, answer fast, and deliver honestly.</p>
+      <p>You can resell thrift clothes, sneakers, handbags, beauty products, phone accessories, data or airtime, school supplies, baby items, small electronics, or seasonal products.</p>
+    </div>
+    <div class="quote-box">
+      Starter offer example:<br><br>
+      One focused batch: 15 clean thrift tops in popular sizes. Each item has a clear photo, size, condition, price, delivery option, and payment rule. No holding without deposit.
+    </div>
+  </div>
+</section>
+
+<section class="band band-dark">
+  <div class="wrap">
+    <span class="eyebrow">Stock roadmap</span>
+    <h2>Depth beats random variety.</h2>
+    <p class="lede" style="margin-top:12px;">Reselling feels simple until cash gets stuck in items nobody wants. Start with one category and learn what moves before buying bigger batches.</p>
+    <table class="info-table">
+      <thead><tr><th>Phase</th><th>Stock choice</th><th>Why it matters</th><th>Risk rule</th></tr></thead>
+      <tbody>
+        <tr><td>Starter batch</td><td>One category: tops, sneakers, phone cases, or beauty item</td><td>Easier to photograph, price, and market</td><td>Small batch only</td></tr>
+        <tr><td>Fast movers</td><td>Items that sold within 7 to 14 days</td><td>Shows real demand, not guesses</td><td>Restock first</td></tr>
+        <tr><td>Slow stock</td><td>Items with no interest after repeated posting</td><td>Holds your cash hostage</td><td>Discount or bundle</td></tr>
+        <tr><td>Delivery setup</td><td>Bags, labels, courier, taxi delivery, collection point</td><td>Customers trust clear delivery rules</td><td>Charge separately</td></tr>
+        <tr><td>Growth</td><td>Better supplier, bigger batch, pop-up table, paid ads</td><td>Only helps when your first batches move</td><td>Use reinvested profit</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Exact launch steps</span>
+    <h2>How to start from zero</h2>
+    <ol class="phase-list">
+      <li><div><h3>Choose one product category</h3><p>Pick a category you understand and can inspect properly. Clothing sizes, sneaker condition, and electronics quality must be described honestly.</p></div></li>
+      <li><div><h3>Set a buying limit</h3><p>Decide the maximum you can spend without needing that money for transport, food, or school needs. Do not gamble all your savings on batch one.</p></div></li>
+      <li><div><h3>Photograph every item clearly</h3><p>Use the same background and light. Show front, back, close-up, size, flaws, and packaging. Good photos reduce repeated questions.</p></div></li>
+      <li><div><h3>Post with full details</h3><p>Every post should include price, size, condition, location, delivery cost, payment method, and whether you accept holds.</p></div></li>
+      <li><div><h3>Track each item</h3><p>Record buying cost, selling price, delivery cost, buyer name, date sold, and profit. Without item records, you cannot tell what is working.</p></div></li>
+      <li><div><h3>Reinvest before spending</h3><p>Put aside money for the next batch before using profit personally. Reselling dies when sales happen but stock cannot be replaced.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Price for turnover and profit</h2>
+    <div class="wide-grid">
+      <div class="detail-card"><h3>Direct costs</h3><ul><li>Item buying price</li><li>Transport to supplier</li><li>Cleaning or repairs</li><li>Packaging</li></ul></div>
+      <div class="detail-card"><h3>Selling costs</h3><ul><li>Data for posting</li><li>Delivery or courier</li><li>Discounts and bundles</li><li>Payment fees if any</li></ul></div>
+      <div class="detail-card"><h3>Profit</h3><ul><li>Owner payment</li><li>Restock money</li><li>Emergency fund</li><li>Supplier search costs</li></ul></div>
+    </div>
+    <p class="lede" style="margin-top:26px;">Quote formula: buying price + transport + cleaning/packaging + selling cost + profit. A smaller profit on fast-moving stock can beat a big markup that sits for months.</p>
+  </div>
+</section>
+
+<section class="band band-dark">
+  <div class="wrap">
+    <span class="eyebrow">Policies</span>
+    <h2>Clear rules stop confusion</h2>
+    <div class="wide-grid">
+      <div class="detail-card"><h3>Holding items</h3><p>Do not hold items for days without a deposit. Holding blocks other buyers and slows cash flow.</p></div>
+      <div class="detail-card"><h3>Condition</h3><p>Describe flaws honestly. A small flaw disclosed early is better than an angry customer later.</p></div>
+      <div class="detail-card"><h3>Returns</h3><p>Set a return rule before selling. For thrift items, make sizing and condition clear so buyers understand what they are accepting.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap content-grid">
+    <div>
+      <span class="eyebrow">Next move</span>
+      <h2>Turn this into a plan</h2>
+      <p>Open the business plan ledger and choose Reselling as your hustle type. Add first stock, transport, data, packaging, delivery, and your expected selling price per item.</p>
+      <a href="ledger.html" class="btn btn-solid">Build my reselling business plan</a>
+    </div>
+    <div class="detail-card">
+      <h3>Starter checklist</h3>
+      <ul><li>One stock category</li><li>Small buying limit</li><li>Clear photos and descriptions</li><li>No-hold-without-deposit rule</li><li>Item profit tracker</li><li>Ledger filled in</li></ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
+    <p><a href="guide.html" style="text-decoration:underline;">Back to business ideas →</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

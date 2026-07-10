@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Plan — Side Hustle Starter Guide</title>
+<meta name="description" content="A practical saving and startup money strategy for first-time side hustle owners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-head{ padding:56px 0 24px; }
+  .band{ padding:54px 0; }
+  .money-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:34px; align-items:start; }
+  .rule-list{ counter-reset:item; list-style:none; padding:0; margin:20px 0 0; }
+  .rule-list li{ counter-increment:item; display:grid; grid-template-columns:44px 1fr; gap:14px; padding:16px 0; border-top:1px solid var(--line); }
+  .rule-list li::before{ content:counter(item, decimal-leading-zero); font-family:var(--mono); color:var(--rust); }
+  .saving-table{ width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.9rem; margin-top:18px; }
+  .saving-table th{ text-align:left; border-bottom:2px solid var(--ink); padding:8px 6px; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; }
+  .saving-table td{ padding:10px 6px; border-bottom:1px solid var(--line); }
+  .saving-table td:last-child, .saving-table th:last-child{ text-align:right; }
+  .note-card{ border:2px solid var(--ink); background:var(--ink); color:var(--paper); padding:24px; border-radius:var(--radius); }
+  .note-card h3{ color:var(--gold); margin-bottom:10px; }
+  .formula{ font-family:var(--mono); background:var(--paper-dim); padding:16px; border:2px solid var(--ink); margin-top:16px; }
+  body.dark-mode .formula{ background:var(--paper-dim); }
+  @media (max-width:860px){ .money-grid{ grid-template-columns:1fr; } }
+  @media (max-width:620px){
+    .page-head{ padding:42px 0 18px; }
+    .band{ padding:42px 0; }
+    .rule-list li{ grid-template-columns:34px 1fr; }
+    .saving-table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; font-size:0.8rem; }
+    .saving-table th, .saving-table td{ min-width:118px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Mordecai<span>Tech</span>Solutions</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="start.html">Start Here</a></li>
+      <li><a href="guide.html">Business Ideas</a></li>
+      <li><a href="money.html" class="active">Money Plan</a></li>
+      <li><a href="decor.html">Decor Setup</a></li>
+      <li><a href="ledger.html">Business Plan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Money plan</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.8rem);">Save first.<br>Buy slower.<br>Grow cleaner.</h1>
+    <p class="lede" style="margin-top:16px;">A startup does not need fancy debt on day one. It needs a clear target, controlled spending, customer deposits, and records that show whether the business is improving.</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap money-grid">
+    <div>
+      <span class="eyebrow">Step by step</span>
+      <h2>How to save for startup costs</h2>
+      <ol class="rule-list">
+        <li>
+          <div>
+            <h3>Write your minimum startup list</h3>
+            <p>Only include what you need to make the first paid sale. Leave out upgrades, decorations, branded clothing, and extra stock until customers prove they will pay.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Add a safety amount</h3>
+            <p>Add 10% to 20% for transport changes, price changes, forgotten small items, cleaning supplies, airtime, and replacements.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Choose a weekly saving target</h3>
+            <p>Divide the startup target by the number of weeks before launch. If the weekly amount is too high, reduce the startup list or launch with a smaller package.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Keep startup money separate</h3>
+            <p>Use a separate envelope, account, or savings pocket. Do not mix business startup money with lunch money, transport money, or family spending.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Use deposits to reduce risk</h3>
+            <p>If a customer booking forces you to buy stock, ingredients, or decor items, take a deposit first. Deposits are not profit; they protect the booking.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <aside class="note-card">
+      <h3>Simple rule</h3>
+      <p>Do not buy expensive equipment until it will either earn money immediately or save money every month.</p>
+      <p>Borrow, rent, or partner first. Buy only after repeated bookings show the item will pay for itself.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Example</span>
+    <h2>Startup saving targets</h2>
+    <p class="lede" style="margin-top:12px;">These are examples. Replace the numbers with your own in the business plan ledger.</p>
+    <table class="saving-table">
+      <thead><tr><th>Business</th><th>Minimum target</th><th>Safety money</th><th>Total target</th><th>Save over 8 weeks</th></tr></thead>
+      <tbody>
+        <tr><td>Tutoring</td><td>R150</td><td>R50</td><td>R200</td><td>R25/week</td></tr>
+        <tr><td>Reselling</td><td>R500</td><td>R100</td><td>R600</td><td>R75/week</td></tr>
+        <tr><td>Hair</td><td>R770</td><td>R130</td><td>R900</td><td>R113/week</td></tr>
+        <tr><td>Catering</td><td>R950</td><td>R150</td><td>R1,100</td><td>R138/week</td></tr>
+        <tr><td>Decor setup</td><td>R1,500</td><td>R300</td><td>R1,800</td><td>R225/week</td></tr>
+      </tbody>
+    </table>
+    <div class="formula">Total target = minimum startup cost + safety money. Weekly saving = total target divided by weeks before launch.</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap money-grid">
+    <div>
+      <span class="eyebrow">After launch</span>
+      <h2>What to do with first profit</h2>
+      <ol class="rule-list">
+        <li><div><h3>Replace used stock first</h3><p>Before spending profit, put back the money needed for the next order or booking.</p></div></li>
+        <li><div><h3>Pay yourself something small</h3><p>Even a small owner payment teaches you that the business must reward your time, not only buy more stock.</p></div></li>
+        <li><div><h3>Reinvest into one useful upgrade</h3><p>Buy the item that removes a real bottleneck: a better chair, better containers, extra glasses, a backdrop stand, or more worksheets.</p></div></li>
+        <li><div><h3>Keep a damage or emergency fund</h3><p>Decor items break, ingredients spoil, clients cancel, and transport fails. Keep some profit aside for recovery.</p></div></li>
+      </ol>
+    </div>
+    <aside class="note-card">
+      <h3>Beginner warning</h3>
+      <p>Revenue is not profit. If a customer pays R1,000 and the booking costs R700 to deliver, the business did not make R1,000. It made R300 before other monthly costs.</p>
+    </aside>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
+    <p><a href="guide.html" style="text-decoration:underline;">Next: compare business ideas →</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

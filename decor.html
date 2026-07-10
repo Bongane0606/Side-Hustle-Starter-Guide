@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decor Setup Business — Side Hustle Starter Guide</title>
+<meta name="description" content="A detailed beginner guide to starting an event decor setup and rental business for weddings, funerals, parties, and community events.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-head{ padding:56px 0 28px; }
+  .band{ padding:58px 0; }
+  .band-dark{ background:var(--ink); color:var(--paper); }
+  .band-dark .eyebrow{ color:var(--gold); }
+  .band-dark .eyebrow::before{ background:var(--gold); }
+  .content-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start; }
+  .wide-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:26px; }
+  .detail-card{ border:2px solid var(--ink); padding:22px; border-radius:var(--radius); background:var(--paper); }
+  body.dark-mode .detail-card{ background:var(--paper-dim); }
+  .band-dark .detail-card{ background:transparent; border-color:rgba(241,236,216,0.48); color:var(--paper); }
+  .detail-card h3{ margin-bottom:10px; }
+  .detail-card ul{ margin:0; padding-left:18px; }
+  .detail-card li{ margin-bottom:8px; }
+  .inventory-table{ width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.86rem; margin-top:18px; }
+  .inventory-table th{ text-align:left; border-bottom:2px solid var(--ink); padding:8px 6px; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; }
+  .inventory-table td{ padding:10px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  .inventory-table td:last-child, .inventory-table th:last-child{ text-align:right; }
+  .band-dark .inventory-table th{ border-bottom-color:var(--paper); }
+  .band-dark .inventory-table td{ border-bottom-color:rgba(241,236,216,0.22); }
+  .phase-list{ counter-reset:phase; list-style:none; padding:0; margin:24px 0 0; }
+  .phase-list li{ counter-increment:phase; display:grid; grid-template-columns:58px 1fr; gap:18px; padding:20px 0; border-top:1px solid var(--line); }
+  .phase-list li::before{ content:counter(phase, decimal-leading-zero); font-family:var(--mono); color:var(--rust); }
+  .quote-box{ border:2px solid var(--ink); padding:22px; background:var(--paper-dim); font-family:var(--mono); }
+  body.dark-mode .quote-box{ background:var(--paper-dim); }
+  @media (max-width:900px){ .content-grid, .wide-grid{ grid-template-columns:1fr; } }
+  @media (max-width:620px){
+    .page-head{ padding:42px 0 18px; }
+    .band{ padding:44px 0; }
+    .phase-list li{ grid-template-columns:38px 1fr; gap:12px; }
+    .inventory-table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; font-size:0.78rem; }
+    .inventory-table th, .inventory-table td{ min-width:130px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Mordecai<span>Tech</span>Solutions</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="start.html">Start Here</a></li>
+      <li><a href="guide.html">Business Ideas</a></li>
+      <li><a href="money.html">Money Plan</a></li>
+      <li><a href="decor.html" class="active">Decor Setup</a></li>
+      <li><a href="ledger.html">Business Plan</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Decor setup business</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.9rem);">Weddings, funerals,<br>parties, and every event<br>in between.</h1>
+    <p class="lede" style="margin-top:16px;">This guide shows how to start event decor without buying every chair, table, tent, glass, plate, and stretch tent on day one. Start with setups you can deliver well, then build inventory from paid bookings.</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap content-grid">
+    <div>
+      <span class="eyebrow">What you sell</span>
+      <h2>Decor is a service plus inventory</h2>
+      <p>A decor setup business does more than rent items. Customers pay you to make the event look organised, match colours, deliver on time, set up neatly, collect items, clean them, and solve problems quietly.</p>
+      <p>You can serve weddings, funerals, birthday parties, bridal showers, baby showers, graduations, corporate events, church events, lobola celebrations, unveiling ceremonies, school events, and community meetings.</p>
+    </div>
+    <div class="quote-box">
+      Starter offer example:<br><br>
+      10-person table setup with table cloth, runner, napkins, plates, glasses, cutlery, centrepiece, candles, setup, and collection.<br><br>
+      Customer pays deposit to book the date. Balance is due before setup.
+    </div>
+  </div>
+</section>
+
+<section class="band band-dark">
+  <div class="wrap">
+    <span class="eyebrow">Inventory roadmap</span>
+    <h2>Buy in phases, not panic.</h2>
+    <p class="lede" style="margin-top:12px;">The safest way to grow decor is to own small, frequently used items first, then rent or partner for expensive items until bookings are regular.</p>
+    <table class="inventory-table">
+      <thead><tr><th>Phase</th><th>Items</th><th>Why it matters</th><th>Buy or rent first?</th></tr></thead>
+      <tbody>
+        <tr><td>Starter table setup</td><td>Table cloths, runners, napkins, centrepieces, candles, vases, plates, glasses, cutlery</td><td>Useful for many event types and easy to photograph</td><td>Buy slowly</td></tr>
+        <tr><td>Backdrop setup</td><td>Backdrop stand, draping fabric, balloon arch items, artificial flowers, signage frame</td><td>Good for birthdays, showers, graduations, and photo areas</td><td>Buy basic, rent extras</td></tr>
+        <tr><td>Seating and tables</td><td>Chairs, chair covers, tables, cocktail tables, kiddies tables, benches</td><td>High demand but needs storage, transport, and cleaning</td><td>Rent or partner first</td></tr>
+        <tr><td>Full event equipment</td><td>Tents, stretch tents, poles, ropes, flooring, lights, heaters, generators</td><td>Can earn more, but damage and transport risk are bigger</td><td>Rent until bookings repeat</td></tr>
+        <tr><td>Operations</td><td>Storage boxes, labels, checklist, cleaning supplies, repair kit, trolley, straps</td><td>Prevents loss, damage, and late setups</td><td>Buy early</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Exact launch steps</span>
+    <h2>How to start from zero</h2>
+    <ol class="phase-list">
+      <li>
+        <div>
+          <h3>Choose one event type first</h3>
+          <p>Pick the event you can understand and reach: funerals, birthdays, baby showers, weddings, or small family gatherings. One focus makes your package easier to price and market.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Create a small package</h3>
+          <p>Start with a 10-person table setup or a backdrop package. Write exactly what is included, what colours are available, how long setup takes, and what the customer must provide.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Make sample setups for photos</h3>
+          <p>Use your own home, yard, church hall, or borrowed table. Take clear daylight photos from the front, side, and close-up. Photos sell decor faster than long explanations.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Find rental partners</h3>
+          <p>Before buying chairs, tables, tents, and stretch tents, find reliable people who already own them. Ask for their prices, delivery rules, deposit rules, and replacement costs.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Set booking rules</h3>
+          <p>Use a deposit, final payment deadline, breakage deposit, setup time, collection time, and cancellation rule. Send these rules by WhatsApp before accepting the booking.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Record every item</h3>
+          <p>Use a checklist for plates, glasses, chairs, cloths, poles, lights, and decor pieces. Count before delivery, count at collection, photograph damage, and charge for missing items.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Do not quote from your head</h2>
+    <div class="wide-grid">
+      <div class="detail-card">
+        <h3>Direct costs</h3>
+        <ul>
+          <li>Items bought or rented for the event</li>
+          <li>Transport to and from the venue</li>
+          <li>Assistants for loading and setup</li>
+          <li>Cleaning, laundry, and repairs</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Business costs</h3>
+        <ul>
+          <li>Data and airtime</li>
+          <li>Storage boxes and labels</li>
+          <li>Marketing photos and flyers</li>
+          <li>Emergency replacement fund</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Profit</h3>
+        <ul>
+          <li>Your planning and setup time</li>
+          <li>Money to grow inventory</li>
+          <li>Owner payment</li>
+          <li>Risk for damage and late changes</li>
+        </ul>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:26px;">Quote formula: rental or stock cost + transport + labour + cleaning + emergency amount + profit. If the customer adds more tables, chairs, glasses, plates, tent space, flowers, lights, or stretch tent size, the price must change.</p>
+  </div>
+</section>
+
+<section class="band band-dark">
+  <div class="wrap">
+    <span class="eyebrow">Policies</span>
+    <h2>Rules protect your profit</h2>
+    <div class="wide-grid">
+      <div class="detail-card">
+        <h3>Deposit</h3>
+        <p>Take a booking deposit to secure the date. For bigger events, take enough to cover rental partners or stock purchases.</p>
+      </div>
+      <div class="detail-card">
+        <h3>Breakage</h3>
+        <p>Charge a refundable breakage deposit for glasses, plates, chairs, stretch tent parts, lights, and fragile decor.</p>
+      </div>
+      <div class="detail-card">
+        <h3>Final payment</h3>
+        <p>Require final payment before setup starts. Once items are installed, your risk is already active.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap content-grid">
+    <div>
+      <span class="eyebrow">Next move</span>
+      <h2>Turn this into a plan</h2>
+      <p>Open the business plan ledger and choose Event decor setup as your hustle type. Add your starter package items, rental partner costs, transport, helpers, cleaning, and breakage fund.</p>
+      <a href="ledger.html" class="btn btn-solid">Build my decor business plan</a>
+    </div>
+    <div class="detail-card">
+      <h3>Starter checklist</h3>
+      <ul>
+        <li>One clear package</li>
+        <li>Three sample photos</li>
+        <li>Supplier or rental partner list</li>
+        <li>Deposit and breakage rules</li>
+        <li>Setup and collection checklist</li>
+        <li>Business plan ledger filled in</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
+    <p><a href="ledger.html" style="text-decoration:underline;">Open the business plan ledger →</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

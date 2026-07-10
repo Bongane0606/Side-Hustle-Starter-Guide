@@ -202,7 +202,10 @@
     </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="guide.html">The Guide</a></li>
+      <li><a href="start.html">Start Here</a></li>
+      <li><a href="guide.html">Business Ideas</a></li>
+      <li><a href="money.html">Money Plan</a></li>
+      <li><a href="decor.html">Decor Setup</a></li>
       <li><a href="ledger.html" class="active">Business Plan</a></li>
     </ul>
   </div>
@@ -258,6 +261,7 @@
           <option>Catering</option>
           <option>Tutoring</option>
           <option>Reselling</option>
+          <option>Event decor setup</option>
           <option>Other</option>
         </select>
       </div>
@@ -426,7 +430,7 @@
         <div class="mini-grid">
           <div>
             <label for="nameKeyword">Keyword</label>
-            <input type="text" id="nameKeyword" placeholder="e.g. braids, plates, maths">
+            <input type="text" id="nameKeyword" placeholder="e.g. braids, plates, maths, decor">
           </div>
           <div>
             <label for="nameVibe">Vibe</label>
@@ -452,7 +456,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>MordecaiTechSolutions — Side Hustle Starter Guide</p>
-    <p><a href="guide.html" style="text-decoration:underline;">← Back to the guide</a></p>
+    <p><a href="guide.html" style="text-decoration:underline;">← Back to business ideas</a></p>
   </div>
 </footer>
 
@@ -607,7 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let result = 'Hair & styling';
     if (style === 'people') result = 'Tutoring & lessons';
     if (style === 'selling') result = 'Reselling & thrifting';
-    if (style === 'hands' && budget === 'high') result = 'Home catering';
+    if (style === 'hands' && budget === 'high') result = 'Event decor setup or home catering';
     if (style === 'hands' && budget === 'low') result = 'Tutoring or hair services with deposits';
     document.getElementById('quizResult').innerHTML = `Best fit: <strong>${result}</strong>`;
   }
